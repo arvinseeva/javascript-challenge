@@ -28,4 +28,14 @@ button.on("click", function() {
     console.log(filteredData);
 
 
-    
+    filteredData.forEach(function(selections) {
+
+        console.log(selections);
+        var row = tbody.append("tr");
+        Object.entries(selections).forEach(function([key, value]) {
+            console.log(key, value);
+            var cell = row.append("td");
+            cell.text(value);
+        });
+    });
+    });
