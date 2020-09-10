@@ -34,14 +34,16 @@
               <div class="panel-body">
                 <form>
                   <div class="form-group">
-                    <ul class="list-group" id="filters">
-                      <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
-                      </li>
-                    </ul>
-                  </div>
-                  <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                    <h4>Search Table</h4>
+                    <input type="datetime" class="form-control" id="datetime" placeholder="Date">
+                    <input type="text" class="form-control" id="state" placeholder="State">
+                    <input type="text" class="form-control" id="city" placeholder="City">
+                    <input type="text" class="form-control" id="country" placeholder="Country">
+                    <input type="text" class="form-control" id="shape" placeholder="Shape">
+                    <a id="search" class="btn btn-default">Filter Table</a>
+                    <a id="reset" class="btn btn-default" onClick="window.location.reload()">Reset Table</a>
+                  </div>    
+                 
                 </form>
               </div>
             </div>
