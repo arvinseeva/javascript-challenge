@@ -34,16 +34,25 @@
               <div class="panel-body">
                 <form>
                   <div class="form-group">
-                    <h4>Search Table</h4>
-                    <input type="datetime" class="form-control" id="datetime" placeholder="Date">
-                    <input type="text" class="form-control" id="state" placeholder="State">
-                    <input type="text" class="form-control" id="city" placeholder="City">
-                    <input type="text" class="form-control" id="country" placeholder="Country">
-                    <input type="text" class="form-control" id="shape" placeholder="Shape">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="date">Enter a Date</label>
+                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                        <label for="date">Enter a State</label>
+                        <input type="text" class="form-control" id="state" placeholder="State">
+                        <label for="date">Enter a City</label>
+                        <input type="text" class="form-control" id="city" placeholder="City">
+                        <label for="date">Enter a Country</label>
+                        <input type="text" class="form-control" id="country" placeholder="Country">
+                        <label for="date">Enter a Shape</label>
+                        <input type="text" class="form-control" id="shape" placeholder="Shape">
+                      </li>
+                    </ul>
+                 
                     <a id="search" class="btn btn-default">Filter Table</a>
                     <a id="reset" class="btn btn-default" onClick="window.location.reload()">Reset Table</a>
                   </div>    
-                 
+                  
                 </form>
               </div>
             </div>
