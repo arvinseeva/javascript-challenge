@@ -7,9 +7,9 @@ var $shapeInput = document.querySelector("#shape");
 var $searchBtn = document.querySelector("#search");
 var $resetBtn = document.querySelector("#reset");
 
-$searchBtn.addEventListener("click", handleSearchButtonClick);
+$searchBtn.addEventListener("click", searching);
 
-$resetBtn.addEventListener("click", handleResetButtonClick);
+$resetBtn.addEventListener("click", resetting);
 
 var tableData = data;
 
@@ -29,7 +29,7 @@ function renderTable() {
   }
 }
 
-function handleSearchButtonClick() {
+function searching() {
   var filterDate = $dateInput.value;
   var filterState = $stateInput.value.trim().toLowerCase();
   var filterCity = $cityInput.value.trim().toLowerCase();
@@ -84,7 +84,7 @@ function handleSearchButtonClick() {
 }
 
 // Clear all the fields
-function handleResetButtonClick(){
+function resetting(){
   renderTable();
 }
 
